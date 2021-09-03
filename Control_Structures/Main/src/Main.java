@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+
+import static java.lang.Math.PI;
+import static jdk.nashorn.internal.objects.NativeMath.round;
+
 public class Main {
     public static void main(String[] args) {
         int count = 1;
@@ -54,6 +59,36 @@ public class Main {
 
         }
 
+        //Not Operator
 
+        System.out.println((!true));
+
+        //Modulo Operator
+
+        int num = 2;
+
+        System.out.println(11%3==num);//returns the reminder
+
+
+
+        //Comparing Objects
+        String a = "hello";
+        String b = "hello";
+        System.out.println(a.equals(b));
+
+
+
+        //Error Handling
+        ArrayList<String> employees = new ArrayList<>();
+        employees.add("arkam");
+
+        try {
+            System.out.println(employees.get(1));
+        }catch (IndexOutOfBoundsException exception){
+            System.out.println("Index Out of Bound error");
+        }
+
+        //Rounding off
+        System.out.println(round(PI, 3));
     }
 }
